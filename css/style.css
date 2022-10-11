@@ -1,0 +1,68 @@
+:root {
+    --Moderate-violet: hsl(263, 55%, 52%);
+    --Very-dark-grayish-blue: hsl(217, 19%, 35%);
+    --Very-dark-blackish-blue: hsl(219, 29%, 14%);
+    --White: hsl(0, 0%, 100%);
+    --Light-gray: hsl(0, 0%, 81%);
+    --Light-grayish-blue: hsl(210, 46%, 95%);
+}
+
+/* body {
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "one one one one two two three three"
+        "three three four four four four five five";
+    gap: 10px;
+    background-color: #eee;
+} */
+
+body {
+    height: 100vh;
+    background-color: #eee;
+}
+
+.content {
+    display: grid;
+    grid-template-columns: repeat(8, auto);
+    grid-template-rows: repeat(2, auto);
+    grid-template-areas: "one one two three"
+        "four five five three";
+    gap: 10px;
+}
+
+.box1 {
+    display: grid;
+    grid-area: one;
+    background-color: var(--Moderate-violet);
+    color: var(--Light-gray);
+}
+
+.box2 {
+    display: grid;
+    grid-area: two;
+    background-color: var(--Very-dark-grayish-blue);
+    color: var(--Light-gray);
+}
+
+.box3 {
+    display: grid;
+    grid-area: three;
+    background-color: var(--White);
+    color: var(--Light-gray);
+}
+
+.box4 {
+    display: grid;
+    grid-area: four;
+    background-color: var(--Very-dark-blackish-blue);
+    color: var(--Light-gray);
+}
+
+.box5 {
+    display: grid;
+    grid-area: five;
+    background-color: white;
+    color: var(--Light-gray);
+}
