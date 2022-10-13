@@ -28,56 +28,10 @@ body {
 .box1 {
     grid-area: one;
     background-color: var(--Moderate-violet);
-    border-radius: 3px;
-    padding: 20px;
-    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
 }
 
-.box1-name {
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-}
-
-.box2 {
-    grid-area: two;
-    background-color: var(--Very-dark-grayish-blue);
-    border-radius: 3px;
-    padding: 20px;
-    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
-}
-
-.box2-name {
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    color: white;
-}
-
-.box3 {
-    grid-area: four;
-    background-color: var(--White);
-    border-radius: 3px;
-    padding: 20px;
-    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
-}
-
-.box3-name {
-    position: relative;
-    bottom: 10px;
-    left: 10px;
-    color: black;
-}
-
-.box4 {
-    grid-area: five;
-    background-color: var(--Very-dark-blackish-blue);
-    border-radius: 3px;
-    padding: 20px;
-    box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
-}
-
+.box1-name,
+.box2-name,
 .box4-name {
     position: relative;
     bottom: 10px;
@@ -85,19 +39,44 @@ body {
     color: white;
 }
 
+.box1,
+.box2,
+.box3,
+.box4,
 .box5 {
-    grid-area: three;
-    background-color: white;
     border-radius: 3px;
     padding: 20px;
     box-shadow: 12px 7px 20px 6px rgb(57 75 84 / 8%);
 }
 
+.box3-name,
 .box5-name {
     position: relative;
     bottom: 10px;
     left: 10px;
     color: black;
+}
+
+.box2 {
+    grid-area: two;
+    background-color: var(--Very-dark-grayish-blue);
+}
+
+.box3 {
+    grid-area: four;
+    background-color: var(--White);
+}
+
+.box4 {
+    grid-area: five;
+    background-color: var(--Very-dark-blackish-blue);
+
+}
+
+.box5 {
+    grid-area: three;
+    background-color: white;
+
 }
 
 .boxtext-bold {
